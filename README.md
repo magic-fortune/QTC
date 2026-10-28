@@ -62,7 +62,9 @@ graph digest, plan digest, claims, evidence kinds, execution identities, and bas
 </table>
 
 <p align="center">
-  <img src="assets/motivation.png" alt="Motivation: the same quantum-derived value can require different semantics at different consumers" width="92%">
+  <a href="assets/motivation.pdf">
+    <img src="assets/motivation.png" alt="Motivation: the same quantum-derived value can require different semantics at different consumers" width="92%">
+  </a>
 </p>
 
 <p align="center"><em>Motivation: QTC resolves meaning at the consumer boundary instead of forcing one global tensor interpretation.</em></p>
@@ -92,7 +94,9 @@ fallbacks.
 ## How it works
 
 <p align="center">
-  <img src="assets/overview.png" alt="QTC overview: source programs flow through reconstruction, contract solving, compilation, and certificate checking" width="94%">
+  <a href="assets/overview.pdf">
+    <img src="assets/overview.png" alt="QTC overview: source programs flow through reconstruction, contract solving, compilation, and certificate checking" width="94%">
+  </a>
 </p>
 
 <p align="center"><em>QTC pipeline: source semantics → CoreGraph → contract analysis → backend-aware plan → certificate check.</em></p>
@@ -136,7 +140,36 @@ the same semantic distinctions used throughout the QTC experiments.
 ## QTC results
 
 <p align="center">
+<a href="assets/rq2_outcomes.pdf">
+<img src="assets/rq2_outcomes.png" alt="RQ2 QTC end-to-end outcome composition" width="100%">
+</a>
+</p>
+
+<p align="center"><em>RQ2: QTC resolves quantum–classical tensor requests across simulated mechanisms and real source families.</em></p>
+
+The outcome figure shows QTC's contextual decision behavior across access,
+forward propagation, measurement, normalization, phase, sampling, demand, and
+evidence families. The simulation suite records 286 emitted supported requests
+with zero unsafe emissions, while the real-source panel shows the same decision
+pipeline applied to source-derived cases.
+
+<p align="center">
+<a href="assets/rq2_timing.pdf">
+<img src="assets/rq2_timing.png" alt="RQ2 QTC compilation and replay timing" width="100%">
+</a>
+</p>
+
+<p align="center"><em>RQ2: compilation and replay timing for simulated and real-source workloads.</em></p>
+
+The timing figure separates simulated compilation, simulated replay, real-source
+import, and compatibility replay. Demand-stress compilation has a 281.69 μs
+median, simulated replay stays below 1 μs at the median, and emitted-plan
+compatibility replay has a 0.62 ms median.
+
+<p align="center">
+<a href="assets/rq3_checker.pdf">
 <img src="assets/rq3_checker.png" alt="RQ3 checker agreement" width="100%">
+</a>
 </p>
 
 <p align="center"><em>QTC certificate checking on the controlled semantic corpus.</em></p>
@@ -149,7 +182,9 @@ between verified, rejected, and unresolved plans instead of collapsing them into
 a single pass/fail result.
 
 <p align="center">
+<a href="assets/rq4_cost.pdf">
 <img src="assets/rq4_cost.png" alt="RQ4 QTC practicality and scaling results" width="100%">
+</a>
 </p>
 
 <p align="center"><em>QTC practicality: stage cost, execution coverage, controlled scaling, and evidence-checking cost.</em></p>
